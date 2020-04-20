@@ -24,8 +24,12 @@ function App() {
   return (
     <div>
       <h1>{count}</h1>
-      <button onClick={increase}>+</button>
-      <button onClick={decrease}>-</button>
+      <button className="counter" onClick={increase}>
+        +
+      </button>
+      <button className="counter" onClick={decrease}>
+        -
+      </button>
       <h1>{time}</h1>
       <button className="timer" onClick={getTime}>
         Get Time
